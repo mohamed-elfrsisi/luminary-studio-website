@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminary Studio — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <!-- css connect -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-logo">Luminary<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-tag">Creative Studio</p>
+            <h1 class="hero-title">We craft<br><em>bold</em><br>digital work.</h1>
+            <p class="hero-body">Luminary is a boutique creative studio specialising in brand identity, web design, and
+                digital experiences that leave lasting impressions.</p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn-primary">Start a Project</a>
+                <a href="about.html" class="btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-placeholder">
+                <div class="hero-graphic">
+                    <div class="hero-graphic-inner">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero-badge">Since<br>2018</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-bar" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">Brand Identity</span>
+            <span class="marquee-item">Web Design</span>
+            <span class="marquee-item">UX Strategy</span>
+            <span class="marquee-item">Motion Graphics</span>
+            <span class="marquee-item">Art Direction</span>
+            <span class="marquee-item">Digital Products</span>
+            <span class="marquee-item">Brand Identity</span>
+            <span class="marquee-item">Web Design</span>
+            <span class="marquee-item">UX Strategy</span>
+            <span class="marquee-item">Motion Graphics</span>
+            <span class="marquee-item">Art Direction</span>
+            <span class="marquee-item">Digital Products</span>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <p class="section-label">What We Do</p>
+                <h2 class="section-title">Our Services</h2>
+            </div>
+            <a href="about.html" class="section-link">View All →</a>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <p class="service-num">01</p>
+                <div class="service-icon">✦</div>
+                <h3 class="service-name">Brand Identity</h3>
+                <p class="service-desc">We build brand systems that are both visually compelling and strategically
+                    coherent — logos, typography, colour, and voice.</p>
+            </div>
+            <div class="service-card">
+                <p class="service-num">02</p>
+                <div class="service-icon">◈</div>
+                <h3 class="service-name">Web Design</h3>
+                <p class="service-desc">Pixel-perfect websites crafted with purpose. Every interaction is considered,
+                    every transition intentional.</p>
+            </div>
+            <div class="service-card">
+                <p class="service-num">03</p>
+                <div class="service-icon">◉</div>
+                <h3 class="service-name">Digital Strategy</h3>
+                <p class="service-desc">From content planning to user research, we ensure your digital presence works as
+                    hard as your team does.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-section">
+        <div class="stat-item">
+            <div class="stat-num">180+</div>
+            <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">94%</div>
+            <div class="stat-label">Client Retention</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Industry Awards</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">7yr</div>
+            <div class="stat-label">In Business</div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div class="testimonial-section">
+        <div class="testimonial-label">What our <em>clients</em> say.</div>
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"Luminary transformed our entire digital presence. They didn't just build us a
+                website — they built us a brand that we're genuinely proud of. The attention to detail is unlike
+                anything I've seen."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">S</div>
+                <div>
+                    <div class="author-name">Sarah Okonkwo</div>
+                    <div class="author-role">CEO, Meridian Collective</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div>
+                <div class="footer-brand-name">Luminary<span>.</span></div>
+                <p class="footer-tagline">A boutique creative studio building bold brands and exceptional digital
+                    experiences.</p>
+            </div>
+            <div>
+                <p class="footer-col-title">Pages</p>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-title">Services</p>
+                <ul class="footer-links">
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Strategy</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-title">Connect</p>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Luminary Studio. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
