@@ -32,13 +32,18 @@ Or simply download the ZIP and double-click `index.html`.
 
 ```
 luminary-studio/
-├── index.html       # Homepage
-├── about.html       # About page
-├── contact.html     # Contact page
+├── index.html           # Homepage
+├── about.html           # About page
+├── contact.html         # Contact page
+├── css/
+│   ├── index.css        # Styles for homepage
+│   ├── about.css        # Styles for about page
+│   ├── contact.css      # Styles for contact page
+│   └── main.css         # Combined stylesheet (all pages)
 └── README.md
 ```
 
-All CSS is written inline within each HTML file using `<style>` blocks. No external stylesheets or JavaScript libraries are required.
+Each page has its own dedicated CSS file for modularity. All individual stylesheets are also collected into `main.css` for a single-file import option.
 
 ---
 
@@ -83,10 +88,10 @@ Tested and working in all modern browsers:
 ## 🛠 Customisation
 
 ### Change the brand name
-Search and replace `Luminary` across all three HTML files.
+Search and replace `Luminary` across all three HTML files and in `css/main.css`.
 
 ### Update colours
-Each file declares CSS custom properties at the top of the `<style>` block:
+CSS custom properties are declared at the top of `css/main.css`:
 
 ```css
 :root {
@@ -98,13 +103,16 @@ Each file declares CSS custom properties at the top of the `<style>` block:
 }
 ```
 
-Edit these values to retheme the entire page in seconds.
+Edit these values once in `main.css` to retheme the entire site in seconds.
 
 ### Add a new page
-1. Copy any existing page as a starting point
-2. Update the `<title>` tag
-3. Set the correct `active` class on the matching nav link
-4. Update the breadcrumb in `.page-hero`
+1. Copy any existing HTML file as a starting point
+2. Create a matching CSS file in the `css/` folder (e.g. `css/newpage.css`)
+3. Link it in the new HTML file: `<link rel="stylesheet" href="css/newpage.css">`
+4. Update the `<title>` tag
+5. Set the correct `active` class on the matching nav link
+6. Update the breadcrumb in `.page-hero`
+7. Optionally add the new styles to `main.css`
 
 ---
 
@@ -115,7 +123,7 @@ This site is fully static and can be deployed anywhere:
 - **GitHub Pages** — push to a `gh-pages` branch or enable Pages from `main`
 - **Netlify** — drag and drop the project folder at [netlify.com/drop](https://netlify.com/drop)
 - **Vercel** — import the repo and deploy with zero configuration
-- **Any web host** — upload the three HTML files via FTP
+- **Any web host** — upload the HTML files and the `css/` folder via FTP
 
 ---
 
