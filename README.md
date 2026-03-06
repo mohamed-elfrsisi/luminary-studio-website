@@ -121,7 +121,7 @@ Edit these values once in `main.css` to retheme the entire site in seconds.
 This site is fully static and can be deployed anywhere:
 
 - **GitHub Pages** — push to a `gh-pages` branch or enable Pages from `main`
-- **Netlify** — drag and drop the project folder at [netlify.com/drop](https://netlify.com/drop)
+- **Netlify** — drag and drop the project folder at [netlify.com/drop]([https://netlify.com/drop](https://bejewelled-caramel-9d99f9.netlify.app/)
 - **Vercel** — import the repo and deploy with zero configuration
 - **Any web host** — upload the HTML files and the `css/` folder via FTP
 
