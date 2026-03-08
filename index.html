@@ -1,193 +1,829 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luminary Studio — Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet" />
-    <!-- css connect -->
-     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description"
+        content="Affinity — Professional creative software by Canva. Vector design, photo editing and page layout in one powerful app. Completely free, no subscription." />
+    <meta name="theme-color" content="#07070E" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Critical Font Loading -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,400&family=Syne:wght@700;800&display=swap" />
+
+    <title>DARION DESIGN</title>
+
+    <!-- 
+      ============================================================
+      AFFINITY LANDING PAGE - EXPERT CSS ARCHITECTURE
+      ============================================================
+      
+      METHODOLOGY: ITCSS + BEM + CUBE CSS
+      - ITCSS: Inverted Triangle organization (Settings → Components)
+      - BEM: Block__Element--Modifier naming for components
+      - CUBE: Composition, Utility, Block, Exception structure
+      - Modern features: Cascade Layers, Container Queries, :has()
+      
+      MAINTENANCE GUIDE:
+      1. Settings: Edit custom properties in :root for global changes
+      2. Components: Each block is self-contained with BEM naming
+      3. Utilities: Helper classes for spacing, text, visibility
+      4. Responsive: Container queries for components, media queries for layout
+      ============================================================
+    -->
+
+<link rel="stylesheet" href="css/style.css">
+
+    <!-- Async Font Loading -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,400&family=Syne:wght@700;800&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,400&family=Syne:wght@700;800&display=swap" />
+    </noscript>
 </head>
 
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- NAV -->
-    <nav>
-        <a href="index.html" class="nav-logo">Luminary<span>.</span></a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html" class="nav-cta">Get Started</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
+    <!-- Hidden checkbox for mobile menu (CSS-only toggle) -->
+    <input type="checkbox" id="nav-toggle" class="u-sr-only" aria-hidden="true" />
+
+    <!-- Navigation -->
+    <header class="c-nav" role="banner">
+        <div class="o-container c-nav__inner">
+            <a href="#main" class="c-nav__brand" aria-label="Affinity — home">DARION</a>
+
+            <label for="nav-toggle" class="c-nav__toggle" aria-label="Toggle navigation menu">
+                <span class="c-nav__toggle-bar" aria-hidden="true"></span>
+                <span class="c-nav__toggle-bar" aria-hidden="true"></span>
+                <span class="c-nav__toggle-bar" aria-hidden="true"></span>
+            </label>
+
+            <nav class="c-nav__menu" aria-label="Main navigation">
+                <a href="#features" class="c-nav__link">Features</a>
+                <a href="#studios" class="c-nav__link">Studios</a>
+                <a href="#ai-tools" class="c-nav__link">AI Tools</a>
+                <a href="#download" class="c-nav__link">Download</a>
+                <a href="#download" class="c-nav__cta" aria-label="Download Affinity free">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                    </svg>
+                    Free Download
+                </a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-left">
-            <p class="hero-tag">Creative Studio</p>
-            <h1 class="hero-title">We craft<br><em>bold</em><br>digital work.</h1>
-            <p class="hero-body">Luminary is a boutique creative studio specialising in brand identity, web design, and
-                digital experiences that leave lasting impressions.</p>
-            <div class="hero-actions">
-                <a href="contact.html" class="btn-primary">Start a Project</a>
-                <a href="about.html" class="btn-outline">Our Story</a>
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="c-hero" aria-labelledby="hero-heading">
+            <!-- Background Effects -->
+            <div class="c-hero__bg" aria-hidden="true">
+                <div class="c-hero__gradient"></div>
+                <div class="c-hero__grid"></div>
+                <div class="c-hero__orb c-hero__orb--primary"></div>
+                <div class="c-hero__orb c-hero__orb--secondary"></div>
+                <div class="c-hero__orb c-hero__orb--accent"></div>
             </div>
-        </div>
-        <div class="hero-right">
-            <div class="hero-img-placeholder">
-                <div class="hero-graphic">
-                    <div class="hero-graphic-inner">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+
+            <div class="c-hero__content">
+                <p class="c-hero__pill u-animate-fade-up u-delay-1">
+                    <span class="c-hero__dot" aria-hidden="true"></span>
+                    Now completely free — no subscription
+                </p>
+
+                <h1 id="hero-heading" class="c-hero__title u-animate-fade-up u-delay-2">
+                    Design without<br />
+                    <span class="c-hero__gradient-text">limits.</span>
+                </h1>
+
+                <p class="c-hero__lead u-animate-fade-up u-delay-3">
+                    Professional vector design, photo editing and page layout in one powerful creative app — yours
+                    forever, for free.
+                </p>
+
+                <div class="c-hero__actions u-animate-fade-up u-delay-4">
+                    <a href="#download" class="c-button c-button--primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                         </svg>
+                        Download for Mac
+                    </a>
+                    <a href="#download" class="c-button c-button--ghost">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15z" />
+                        </svg>
+                        Download for Windows
+                    </a>
+                </div>
+
+                <!-- App Mockup -->
+                <div class="c-mockup u-animate-fade-up u-delay-5" role="img"
+                    aria-label="Affinity app interface preview showing vector, pixel and export studios">
+                    <div class="c-mockup__window">
+                        <!-- Title Bar -->
+                        <div class="c-mockup__titlebar">
+                            <span class="c-mockup__traffic-light c-mockup__traffic-light--close"
+                                aria-hidden="true"></span>
+                            <span class="c-mockup__traffic-light c-mockup__traffic-light--minimize"
+                                aria-hidden="true"></span>
+                            <span class="c-mockup__traffic-light c-mockup__traffic-light--maximize"
+                                aria-hidden="true"></span>
+
+                            <div class="c-mockup__title">Affinity</div>
+
+                            <div class="c-mockup__studios">
+                                <span class="c-mockup__studio c-mockup__studio--vector">Vector</span>
+                                <span class="c-mockup__studio c-mockup__studio--pixel">Pixel</span>
+                                <span class="c-mockup__studio c-mockup__studio--export">Export</span>
+                            </div>
+                        </div>
+
+                        <!-- App Body -->
+                        <div class="c-mockup__body">
+                            <!-- Toolbar -->
+                            <aside class="c-mockup__toolbar" aria-label="Tools">
+                                <button class="c-mockup__tool c-mockup__tool--active" aria-label="Move tool">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3M12 12h.01" />
+                                    </svg>
+                                </button>
+                                <button class="c-mockup__tool" aria-label="Node tool">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M12 3v18M3 12h18" />
+                                    </svg>
+                                </button>
+                                <div class="c-mockup__sep"></div>
+                                <button class="c-mockup__tool" aria-label="Pen tool">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586M11 11a2 2 0 100-4 2 2 0 000 4z" />
+                                    </svg>
+                                </button>
+                                <button class="c-mockup__tool" aria-label="Rectangle tool">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    </svg>
+                                </button>
+                                <button class="c-mockup__tool" aria-label="Text tool">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M4 7V4h16v3M9 20h6M12 4v16" />
+                                    </svg>
+                                </button>
+                            </aside>
+
+                            <!-- Canvas -->
+                            <div class="c-mockup__canvas">
+                                <!-- CSS Art Poster -->
+                                <div class="c-poster" aria-hidden="true">
+                                    <div class="c-poster__bg"></div>
+                                    <div class="c-poster__ring"></div>
+                                    <div class="c-poster__ring-inner"></div>
+                                    <div class="c-poster__orb"></div>
+                                    <div class="c-poster__triangle"></div>
+                                    <div class="c-poster__rect"></div>
+                                </div>
+                            </div>
+
+                            <!-- Inspector -->
+                            <aside class="c-mockup__inspector" aria-label="Properties">
+                                <div>
+                                    <div
+                                        style="font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); padding-bottom: var(--space-2); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-2);">
+                                        Position & Size</div>
+                                    <div
+                                        style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                        <span style="font-size: 0.64rem; color: var(--text-tertiary);">X</span>
+                                        <input value="124.5"
+                                            style="width: 58px; height: 23px; border-radius: 6px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-default); font-size: 0.62rem; color: var(--text-primary); text-align: right; padding-right: 6px;"
+                                            readonly tabindex="-1" />
+                                    </div>
+                                    <div
+                                        style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                        <span style="font-size: 0.64rem; color: var(--text-tertiary);">Y</span>
+                                        <input value="87.0"
+                                            style="width: 58px; height: 23px; border-radius: 6px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-default); font-size: 0.62rem; color: var(--text-primary); text-align: right; padding-right: 6px;"
+                                            readonly tabindex="-1" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        style="font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); padding-bottom: var(--space-2); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-2);">
+                                        Appearance</div>
+                                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px;">
+                                        <div
+                                            style="width: 24px; height: 24px; border-radius: 6px; background: var(--af-blue); box-shadow: 0 2px 8px rgba(47,111,235,0.6);">
+                                        </div>
+                                        <div
+                                            style="width: 24px; height: 24px; border-radius: 6px; background: var(--af-purple); box-shadow: 0 2px 8px rgba(123,78,232,0.5);">
+                                        </div>
+                                        <div
+                                            style="width: 24px; height: 24px; border-radius: 6px; background: var(--af-red); box-shadow: 0 2px 8px rgba(232,81,74,0.5);">
+                                        </div>
+                                        <div
+                                            style="width: 24px; height: 24px; border-radius: 6px; background: var(--text-primary);">
+                                        </div>
+                                        <div
+                                            style="width: 24px; height: 24px; border-radius: 6px; background: var(--bg-base); border: 1px solid rgba(255,255,255,0.2);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-badge">Since<br>2018</div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee-bar" aria-hidden="true">
-        <div class="marquee-track">
-            <span class="marquee-item">Brand Identity</span>
-            <span class="marquee-item">Web Design</span>
-            <span class="marquee-item">UX Strategy</span>
-            <span class="marquee-item">Motion Graphics</span>
-            <span class="marquee-item">Art Direction</span>
-            <span class="marquee-item">Digital Products</span>
-            <span class="marquee-item">Brand Identity</span>
-            <span class="marquee-item">Web Design</span>
-            <span class="marquee-item">UX Strategy</span>
-            <span class="marquee-item">Motion Graphics</span>
-            <span class="marquee-item">Art Direction</span>
-            <span class="marquee-item">Digital Products</span>
-        </div>
-    </div>
-
-    <!-- SERVICES -->
-    <section class="section">
-        <div class="section-header">
-            <div>
-                <p class="section-label">What We Do</p>
-                <h2 class="section-title">Our Services</h2>
-            </div>
-            <a href="about.html" class="section-link">View All →</a>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <p class="service-num">01</p>
-                <div class="service-icon">✦</div>
-                <h3 class="service-name">Brand Identity</h3>
-                <p class="service-desc">We build brand systems that are both visually compelling and strategically
-                    coherent — logos, typography, colour, and voice.</p>
-            </div>
-            <div class="service-card">
-                <p class="service-num">02</p>
-                <div class="service-icon">◈</div>
-                <h3 class="service-name">Web Design</h3>
-                <p class="service-desc">Pixel-perfect websites crafted with purpose. Every interaction is considered,
-                    every transition intentional.</p>
-            </div>
-            <div class="service-card">
-                <p class="service-num">03</p>
-                <div class="service-icon">◉</div>
-                <h3 class="service-name">Digital Strategy</h3>
-                <p class="service-desc">From content planning to user research, we ensure your digital presence works as
-                    hard as your team does.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <div class="stats-section">
-        <div class="stat-item">
-            <div class="stat-num">180+</div>
-            <div class="stat-label">Projects Delivered</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-num">94%</div>
-            <div class="stat-label">Client Retention</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-num">12</div>
-            <div class="stat-label">Industry Awards</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-num">7yr</div>
-            <div class="stat-label">In Business</div>
-        </div>
-    </div>
-
-    <!-- TESTIMONIAL -->
-    <div class="testimonial-section">
-        <div class="testimonial-label">What our <em>clients</em> say.</div>
-        <div class="testimonial-card">
-            <p class="testimonial-quote">"Luminary transformed our entire digital presence. They didn't just build us a
-                website — they built us a brand that we're genuinely proud of. The attention to detail is unlike
-                anything I've seen."</p>
-            <div class="testimonial-author">
-                <div class="author-avatar">S</div>
-                <div>
-                    <div class="author-name">Sarah Okonkwo</div>
-                    <div class="author-role">CEO, Meridian Collective</div>
+        <!-- Marquee -->
+        <div class="c-marquee" aria-hidden="true">
+            <p class="c-marquee__title">Opens everything you already work with</p>
+            <div
+                style="overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);">
+                <div class="c-marquee__track">
+                    <span class="c-marquee__item">.PSD</span>
+                    <span class="c-marquee__item">.AI</span>
+                    <span class="c-marquee__item">.SVG</span>
+                    <span class="c-marquee__item">.PDF</span>
+                    <span class="c-marquee__item">.EPS</span>
+                    <span class="c-marquee__item">.TIFF</span>
+                    <span class="c-marquee__item">.RAW</span>
+                    <span class="c-marquee__item">.PNG</span>
+                    <span class="c-marquee__item">.JPEG</span>
+                    <span class="c-marquee__item">.WebP</span>
+                    <span class="c-marquee__item">.AVIF</span>
+                    <span class="c-marquee__item">.GIF</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="c-marquee__item">.PSD</span>
+                    <span class="c-marquee__item">.AI</span>
+                    <span class="c-marquee__item">.SVG</span>
+                    <span class="c-marquee__item">.PDF</span>
+                    <span class="c-marquee__item">.EPS</span>
+                    <span class="c-marquee__item">.TIFF</span>
+                    <span class="c-marquee__item">.RAW</span>
+                    <span class="c-marquee__item">.PNG</span>
+                    <span class="c-marquee__item">.JPEG</span>
+                    <span class="c-marquee__item">.WebP</span>
+                    <span class="c-marquee__item">.AVIF</span>
+                    <span class="c-marquee__item">.GIF</span>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-top">
-            <div>
-                <div class="footer-brand-name">Luminary<span>.</span></div>
-                <p class="footer-tagline">A boutique creative studio building bold brands and exceptional digital
-                    experiences.</p>
+        <!-- Features Section -->
+        <section class="o-section o-section--alt" id="features" aria-labelledby="features-heading">
+            <div class="o-container">
+                <div class="c-section-head u-reveal-up">
+                    <p class="c-section-head__label">
+                        <span class="c-hero__dot" aria-hidden="true"></span>
+                        The Unified App
+                    </p>
+                    <h2 id="features-heading" class="c-section-head__title">One app. Three studios.<br>Infinite
+                        possibilities.</h2>
+                    <p class="c-section-head__desc">Affinity seamlessly integrates vector design, photo editing, and
+                        page layout in a single, powerful application.</p>
+                </div>
+
+                <div class="o-grid o-grid--3col u-stagger">
+                    <!-- Vector Studio -->
+                    <article class="c-feature-card c-feature-card--vector u-reveal-up" aria-labelledby="vector-heading">
+                        <div class="c-feature-card__visual">
+                            <!-- CSS Art: Vector shapes -->
+                            <div
+                                style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                                <svg width="180" height="160" viewBox="0 0 180 160" fill="none"
+                                    style="filter: drop-shadow(0 0 20px rgba(47, 111, 235, 0.5)); animation: des-bob 6s ease-in-out infinite alternate;">
+                                    <path
+                                        d="M90 20 C130 20, 160 50, 155 90 C150 130, 110 150, 75 140 C40 130, 20 100, 30 65 C40 30, 50 20, 90 20Z"
+                                        fill="rgba(47,111,235,0.15)" stroke="rgba(47,111,235,0.7)" stroke-width="1.5" />
+                                    <path
+                                        d="M90 40 C118 40, 138 62, 134 90 C130 118, 106 132, 82 124 C58 116, 42 94, 50 68 C58 42, 62 40, 90 40Z"
+                                        fill="rgba(47,111,235,0.1)" stroke="rgba(77,135,255,0.5)" stroke-width="1"
+                                        stroke-dasharray="4 3" />
+                                    <circle cx="90" cy="90" r="22" fill="rgba(47,111,235,0.25)"
+                                        stroke="rgba(47,111,235,0.6)" stroke-width="1.5" />
+                                    <circle cx="90" cy="90" r="10" fill="rgba(77,135,255,0.5)" />
+                                </svg>
+                                <div style="position: absolute; inset: 0; pointer-events: none;">
+                                    <div
+                                        style="position: absolute; top: 32%; left: 22%; width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 2px solid var(--af-blue); box-shadow: 0 0 10px rgba(47,111,235,0.9); animation: nd-pulse 2.8s ease-in-out infinite;">
+                                    </div>
+                                    <div
+                                        style="position: absolute; top: 18%; left: 54%; width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 2px solid var(--af-blue); box-shadow: 0 0 10px rgba(47,111,235,0.9); animation: nd-pulse 2.8s ease-in-out infinite 0.5s;">
+                                    </div>
+                                    <div
+                                        style="position: absolute; top: 55%; left: 70%; width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 2px solid var(--af-blue); box-shadow: 0 0 10px rgba(47,111,235,0.9); animation: nd-pulse 2.8s ease-in-out infinite 1s;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-feature-card__body">
+                            <div class="c-feature-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                    <circle cx="11" cy="11" r="2" />
+                                </svg>
+                            </div>
+                            <h3 id="vector-heading" class="c-feature-card__title">Vector Studio</h3>
+                            <p class="c-feature-card__desc">Precision Bézier tools, boolean operations, and unlimited
+                                artboards for UI design, branding, and illustration.</p>
+                            <a href="#features" class="c-feature-card__link">
+                                Explore Vector
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Pixel Studio -->
+                    <article class="c-feature-card c-feature-card--pixel u-reveal-up" aria-labelledby="pixel-heading">
+                        <div class="c-feature-card__visual">
+                            <div style="position: absolute; inset: 0; overflow: hidden;">
+                                <div
+                                    style="position: absolute; inset: 0; background: linear-gradient(180deg, #100530 0%, #1C0A5A 30%, #0A2060 55%, #050A20 100%);">
+                                </div>
+                                <div
+                                    style="position: absolute; inset: 0; background-image: radial-gradient(1px 1px at 12% 10%, rgba(255,255,255,0.9), transparent), radial-gradient(1px 1px at 28% 6%, rgba(255,255,255,0.7), transparent), radial-gradient(1px 1px at 44% 14%, rgba(255,255,255,0.8), transparent);">
+                                </div>
+                                <div
+                                    style="position: absolute; bottom: 38%; left: 0; right: 0; height: 100px; background: linear-gradient(180deg, transparent, rgba(123,78,232,0.35) 35%, rgba(47,111,235,0.45) 65%, transparent); filter: blur(14px); animation: aurora 7s ease-in-out infinite alternate;">
+                                </div>
+                                <div
+                                    style="position: absolute; bottom: 0; left: 0; right: 0; height: 48%; background: #05050F; clip-path: polygon(0% 100%, 0% 68%, 10% 42%, 20% 58%, 33% 22%, 48% 48%, 60% 16%, 72% 42%, 82% 28%, 92% 45%, 100% 30%, 100% 100%);">
+                                </div>
+                                <div
+                                    style="position: absolute; top: 10px; right: 10px; background: rgba(7,4,20,0.88); border: 1px solid rgba(123,78,232,0.3); border-radius: 10px; padding: 10px 12px; width: 120px; backdrop-filter: blur(8px); box-shadow: var(--shadow-md);">
+                                    <div
+                                        style="font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 7px;">
+                                        Adjustments</div>
+                                    <div style="margin-bottom: 6px;">
+                                        <div
+                                            style="font-size: 0.6rem; color: var(--text-tertiary); margin-bottom: 3px; display: flex; justify-content: space-between;">
+                                            <span>Exposure</span><span
+                                                style="color: var(--af-purple-light);">+0.8</span></div>
+                                        <div
+                                            style="height: 3px; background: var(--whisper); border-radius: 2px; overflow: hidden;">
+                                            <div
+                                                style="height: 100%; width: 65%; background: var(--gradient-purple); border-radius: 2px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-feature-card__body">
+                            <div class="c-feature-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path
+                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                    <circle cx="12" cy="13" r="4" />
+                                </svg>
+                            </div>
+                            <h3 id="pixel-heading" class="c-feature-card__title">Pixel Studio</h3>
+                            <p class="c-feature-card__desc">Professional RAW editing, HDR merge, focus stacking, and
+                                100+ live filters for photography and retouching.</p>
+                            <a href="#features" class="c-feature-card__link">
+                                Explore Pixel
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Layout Studio -->
+                    <article class="c-feature-card c-feature-card--layout u-reveal-up" aria-labelledby="layout-heading">
+                        <div class="c-feature-card__visual">
+                            <div
+                                style="position: absolute; inset: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                <div
+                                    style="border-radius: 7px; border: 1px solid rgba(232,81,74,0.25); background: rgba(232,81,74,0.05); padding: 9px; display: flex; flex-direction: column; gap: 5px; overflow: hidden;">
+                                    <div
+                                        style="height: 44px; border-radius: 5px; background: linear-gradient(135deg, rgba(232,81,74,0.55), rgba(123,78,232,0.4)); flex-shrink: 0;">
+                                    </div>
+                                    <div style="height: 6px; border-radius: 3px; background: rgba(232,81,74,0.55);">
+                                    </div>
+                                    <div style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1);">
+                                    </div>
+                                    <div
+                                        style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1); width: 70%;">
+                                    </div>
+                                </div>
+                                <div
+                                    style="border-radius: 7px; border: 1px solid rgba(232,81,74,0.25); background: rgba(232,81,74,0.05); padding: 9px; display: flex; flex-direction: column; gap: 5px; overflow: hidden;">
+                                    <div
+                                        style="height: 44px; border-radius: 5px; background: linear-gradient(135deg, rgba(47,111,235,0.5), rgba(123,78,232,0.4)); flex-shrink: 0;">
+                                    </div>
+                                    <div style="height: 6px; border-radius: 3px; background: rgba(232,81,74,0.55);">
+                                    </div>
+                                    <div style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1);">
+                                    </div>
+                                </div>
+                                <div
+                                    style="border-radius: 7px; border: 1px solid rgba(232,81,74,0.25); background: rgba(232,81,74,0.05); padding: 9px; display: flex; flex-direction: column; gap: 5px; overflow: hidden;">
+                                    <div
+                                        style="height: 6px; border-radius: 3px; background: rgba(232,81,74,0.55); width: 60%;">
+                                    </div>
+                                    <div style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1);">
+                                    </div>
+                                    <div
+                                        style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1); width: 70%;">
+                                    </div>
+                                    <div
+                                        style="height: 32px; border-radius: 5px; background: linear-gradient(135deg, rgba(232,81,74,0.5), rgba(123,78,232,0.3)); margin-top: auto;">
+                                    </div>
+                                </div>
+                                <div
+                                    style="border-radius: 7px; border: 1px solid rgba(232,81,74,0.25); background: rgba(232,81,74,0.05); padding: 9px; display: flex; flex-direction: column; gap: 5px; overflow: hidden;">
+                                    <div style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1);">
+                                    </div>
+                                    <div
+                                        style="height: 3.5px; border-radius: 2px; background: rgba(255,255,255,0.1); width: 70%;">
+                                    </div>
+                                    <div
+                                        style="height: 50px; border-radius: 5px; background: linear-gradient(135deg, rgba(47,111,235,0.45), rgba(232,81,74,0.3)); margin-top: 4px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-feature-card__body">
+                            <div class="c-feature-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14,2 14,8 20,8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10,9 9,9 8,9" />
+                                </svg>
+                            </div>
+                            <h3 id="layout-heading" class="c-feature-card__title">Layout Studio</h3>
+                            <p class="c-feature-card__desc">Master pages, advanced typography, data merge, and
+                                press-ready PDF/X export for multi-page documents.</p>
+                            <a href="#features" class="c-feature-card__link">
+                                Explore Layout
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div>
-                <p class="footer-col-title">Pages</p>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section class="o-section" id="ai-tools" aria-labelledby="ai-heading">
+            <div class="o-container">
+                <div class="c-section-head u-reveal-up">
+                    <div
+                        style="display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-1) var(--space-4); border-radius: var(--radius-full); background: rgba(47,111,235,0.1); border: 1px solid rgba(47,111,235,0.3); color: var(--af-blue-light); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-4); animation: badge-pulse 3s ease-in-out infinite;">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+                        </svg>
+                        AI-Powered
+                    </div>
+                    <h2 id="ai-heading" class="c-section-head__title">Intelligence woven in,<br><span
+                            style="color: var(--text-muted);">not bolted on</span></h2>
+                    <p class="c-section-head__desc">Every AI tool in Affinity learns from your creative intent —
+                        enhancing your workflow without replacing your vision.</p>
+                </div>
+
+                <div class="o-grid o-grid--3col u-stagger">
+                    <article class="c-ai-card u-reveal-up" aria-labelledby="ai1">
+                        <div class="c-ai-card__icon" style="background: rgba(123,78,232,0.15);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9B72FF"
+                                stroke-width="2" stroke-linecap="round">
+                                <path
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                        </div>
+                        <h3 id="ai1" class="c-ai-card__title">Subject Selection</h3>
+                        <p class="c-ai-card__desc">One-click selection of any subject with perfect masking of hair, fur
+                            and complex edges. Works on any background.</p>
+                    </article>
+
+                    <article class="c-ai-card u-reveal-up" aria-labelledby="ai2">
+                        <div class="c-ai-card__icon" style="background: rgba(47,111,235,0.15);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D87FF"
+                                stroke-width="2" stroke-linecap="round">
+                                <path
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 id="ai2" class="c-ai-card__title">Generative Fill</h3>
+                        <p class="c-ai-card__desc">Extend canvas, remove objects, or add new elements. The image fills
+                            context-aware from surrounding pixels.</p>
+                    </article>
+
+                    <article class="c-ai-card u-reveal-up" aria-labelledby="ai3">
+                        <div class="c-ai-card__icon" style="background: rgba(232,81,74,0.15);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A74"
+                                stroke-width="2" stroke-linecap="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3 id="ai3" class="c-ai-card__title">Smart Upscale</h3>
+                        <p class="c-ai-card__desc">Upscale images up to 4× resolution with AI-reconstructed detail that
+                            looks genuinely native at the new size.</p>
+                    </article>
+
+                    <article class="c-ai-card u-reveal-up" aria-labelledby="ai4">
+                        <div class="c-ai-card__icon" style="background: rgba(34,197,94,0.15);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e"
+                                stroke-width="2" stroke-linecap="round">
+                                <path
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                        <h3 id="ai4" class="c-ai-card__title">Background Removal</h3>
+                        <p class="c-ai-card__desc">Instant, clean removal from any photo. No manual masking, no fringing
+                            — a perfect cutout in a single click.</p>
+                    </article>
+
+                    <article class="c-ai-card u-reveal-up" aria-labelledby="ai5">
+                        <div class="c-ai-card__icon" style="background: rgba(234,179,8,0.15);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#eab308"
+                                stroke-width="2" stroke-linecap="round">
+                                <path
+                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9zm9 4a3 3 0 110-6 3 3 0 010 6z" />
+                            </svg>
+                        </div>
+                        <h3 id="ai5" class="c-ai-card__title">AI Noise Reduction</h3>
+                        <p class="c-ai-card__desc">Distinguishes between grain and texture — eliminating noise while
+                            preserving the fine detail that matters.</p>
+                    </article>
+
+                    <article class="c-ai-card u-reveal-up"
+                        style="border: 1.5px dashed rgba(255,255,255,0.1); background: transparent; display: flex; flex-direction: column; justify-content: space-between;"
+                        aria-labelledby="ai6">
+                        <div>
+                            <h3 id="ai6" class="c-ai-card__title">More arriving soon</h3>
+                            <p class="c-ai-card__desc" style="margin-top: var(--space-3);">New AI tools ship
+                                continuously — download once and they arrive automatically, at no cost.</p>
+                        </div>
+                        <a href="#download" class="c-button c-button--blue c-button--small"
+                            style="margin-top: var(--space-6); align-self: flex-start;">
+                            Get Affinity Free →
+                        </a>
+                    </article>
+                </div>
             </div>
-            <div>
-                <p class="footer-col-title">Services</p>
-                <ul class="footer-links">
-                    <li><a href="#">Brand Identity</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Strategy</a></li>
-                </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="o-section o-section--alt" aria-labelledby="testimonials-heading">
+            <div class="o-container">
+                <div class="c-section-head u-reveal-up">
+                    <p class="c-section-head__label">Made with Affinity</p>
+                    <h2 id="testimonials-heading" class="c-section-head__title">Trusted by 3 million creators</h2>
+                </div>
+
+                <div class="o-grid o-grid--3col u-stagger">
+                    <article class="c-testimonial c-testimonial--featured u-reveal-left" aria-labelledby="testi-1">
+                        <p class="c-testimonial__stars" aria-label="5 stars">★★★★★</p>
+                        <p class="c-testimonial__quote">"Affinity keeps raising the bar. These updates prove they're
+                            years ahead. Their commitment to supporting creatives without a subscription is unmatched."
+                        </p>
+                        <footer class="c-testimonial__author">
+                            <div class="c-testimonial__avatar"
+                                style="background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0.15));"
+                                aria-hidden="true">SG</div>
+                            <div>
+                                <cite class="c-testimonial__name" id="testi-1">Sphelele Gumede</cite>
+                                <span class="c-testimonial__role">Illustrator & Brand Designer</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="c-testimonial u-reveal-up" aria-labelledby="testi-2">
+                        <p class="c-testimonial__stars" aria-label="5 stars">★★★★★</p>
+                        <p class="c-testimonial__quote">"I switched from Adobe two years ago and haven't looked back.
+                            The vector tools are genuinely better for my UI work — and it's free now."</p>
+                        <footer class="c-testimonial__author">
+                            <div class="c-testimonial__avatar" style="background: var(--gradient-blue);"
+                                aria-hidden="true">MK</div>
+                            <div>
+                                <cite class="c-testimonial__name" id="testi-2">Mia Kowalski</cite>
+                                <span class="c-testimonial__role">Senior UI/UX Designer</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="c-testimonial u-reveal-right" aria-labelledby="testi-3">
+                        <p class="c-testimonial__stars" aria-label="5 stars">★★★★★</p>
+                        <p class="c-testimonial__quote">"The RAW processing in Affinity rivals Lightroom.
+                            Non-destructive, fast, and the aurora shot I edited last week turned out incredible."</p>
+                        <footer class="c-testimonial__author">
+                            <div class="c-testimonial__avatar" style="background: var(--gradient-purple);"
+                                aria-hidden="true">DL</div>
+                            <div>
+                                <cite class="c-testimonial__name" id="testi-3">Damien Laurent</cite>
+                                <span class="c-testimonial__role">Landscape Photographer</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
             </div>
-            <div>
-                <p class="footer-col-title">Connect</p>
-                <ul class="footer-links">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Dribbble</a></li>
-                </ul>
+        </section>
+
+        <!-- Download Section -->
+        <section class="o-section" id="download" aria-labelledby="download-heading">
+            <div class="o-container">
+                <div class="c-section-head u-reveal-up">
+                    <h2 id="download-heading" class="c-section-head__title u-text-gradient">Zero bucks. Zero catch.</h2>
+                    <p class="c-section-head__desc" style="margin-top: var(--space-4);">Affinity is completely free.
+                        Every studio — Vector, Pixel, and Layout — no trial, no subscription, no watermarks.</p>
+                </div>
+
+                <div class="o-grid o-grid--3col u-stagger"
+                    style="max-width: 1000px; margin-inline: auto; margin-bottom: var(--space-10);">
+                    <div class="c-download-card c-download-card--featured u-reveal-left">
+                        <div class="c-download-card__badge" aria-label="Most popular">Most Popular</div>
+                        <div class="c-download-card__icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="var(--af-blue-light)">
+                                <path
+                                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                            </svg>
+                        </div>
+                        <h3 class="c-download-card__title">macOS</h3>
+                        <p class="c-download-card__desc">Native Apple Silicon and Intel. Optimised for macOS Ventura and
+                            above.</p>
+                        <a href="#" class="c-button c-button--blue c-button--wide" rel="noopener">Download for Mac —
+                            Free</a>
+                        <p class="c-download-card__note">Requires macOS 10.15 or later</p>
+                    </div>
+
+                    <div class="c-download-card u-reveal-up">
+                        <div class="c-download-card__icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="var(--af-blue-light)">
+                                <path
+                                    d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15z" />
+                            </svg>
+                        </div>
+                        <h3 class="c-download-card__title">Windows</h3>
+                        <p class="c-download-card__desc">Hardware-accelerated. Built for Windows 10 and 11 with full GPU
+                            utilisation.</p>
+                        <a href="#" class="c-button c-button--ghost c-button--wide" rel="noopener">Download for Windows
+                            — Free</a>
+                        <p class="c-download-card__note">Requires Windows 10 build 1903 or later</p>
+                    </div>
+
+                    <div class="c-download-card u-reveal-right" style="opacity: 0.62;">
+                        <span class="c-download-card__coming-soon">Coming soon</span>
+                        <div class="c-download-card__icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--af-purple-light)"
+                                stroke-width="2" stroke-linecap="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+                            </svg>
+                        </div>
+                        <h3 class="c-download-card__title">Web</h3>
+                        <p class="c-download-card__desc">Create from any browser, on any device. No install required.
+                        </p>
+                        <button class="c-button c-button--ghost c-button--wide" disabled aria-disabled="true">Notify me
+                            when live</button>
+                        <p class="c-download-card__note">iPad app available now on the App Store</p>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-10);">
+                    <div class="o-grid o-grid--4col u-stagger">
+                        <div class="c-stat u-reveal-up">
+                            <strong class="c-stat__value">3M+</strong>
+                            <p class="c-stat__label">Active creators</p>
+                        </div>
+                        <div class="c-stat u-reveal-up">
+                            <strong class="c-stat__value">4.9</strong>
+                            <p class="c-stat__label">App Store rating</p>
+                        </div>
+                        <div class="c-stat u-reveal-up">
+                            <strong class="c-stat__value">$0</strong>
+                            <p class="c-stat__label">Cost, forever</p>
+                        </div>
+                        <div class="c-stat u-reveal-up">
+                            <strong class="c-stat__value">700+</strong>
+                            <p class="c-stat__label">RAW camera profiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="o-section"
+            style="position: relative; text-align: center; padding-block: clamp(7rem, 14vw, 12rem); overflow: hidden;"
+            aria-labelledby="cta-heading">
+            <div
+                style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 110% 80% at 50% 100%, rgba(47,111,235,0.22) 0%, transparent 55%), radial-gradient(ellipse 60% 50% at 20% 50%, rgba(123,78,232,0.12) 0%, transparent 55%);">
+            </div>
+
+            <div class="o-container u-reveal-up" style="position: relative; z-index: 1;">
+                <h2 id="cta-heading" class="c-section-head__title" style="margin-bottom: var(--space-4);">
+                    Start creating.<br>
+                    <span class="u-text-gradient">Right now. For free.</span>
+                </h2>
+                <p style="font-size: var(--text-lg); max-width: 500px; margin: 0 auto var(--space-8);">No trial. No
+                    subscription. No catch. Professional creative tools, yours forever.</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="#download" class="c-button c-button--primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                        </svg>
+                        Download for Mac
+                    </a>
+                    <a href="#download" class="c-button c-button--ghost">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1l10 .15z" />
+                        </svg>
+                        Download for Windows
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="c-footer" role="contentinfo">
+        <div class="o-container">
+            <div class="c-footer__grid">
+                <div class="c-footer__brand-col">
+                    <span class="c-footer__brand">DARION</span>
+                    <p class="c-footer__tagline">Professional creative software. Free for every designer, photographer
+                        and publisher.</p>
+                    <p class="c-footer__byline">by <em>Canva</em></p>
+                    <nav class="c-footer__socials" aria-label="Social media">
+                        <a href="#" class="c-footer__social" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="c-footer__social" aria-label="Instagram">✦</a>
+                        <a href="#" class="c-footer__social" aria-label="YouTube">▶</a>
+                        <a href="#" class="c-footer__social" aria-label="Facebook">f</a>
+                    </nav>
+                </div>
+
+                <nav aria-labelledby="footer-products">
+                    <h5 id="footer-products" class="c-footer__col-title">Product</h5>
+                    <ul class="c-footer__links">
+                        <li><a href="#features" class="c-footer__link">Features</a></li>
+                        <li><a href="#studios" class="c-footer__link">Studios</a></li>
+                        <li><a href="#ai-tools" class="c-footer__link">AI Tools</a></li>
+                        <li><a href="#download" class="c-footer__link">Download</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-labelledby="footer-resources">
+                    <h5 id="footer-resources" class="c-footer__col-title">Resources</h5>
+                    <ul class="c-footer__links">
+                        <li><a href="#" class="c-footer__link">Tutorials</a></li>
+                        <li><a href="#" class="c-footer__link">Templates</a></li>
+                        <li><a href="#" class="c-footer__link">Community</a></li>
+                        <li><a href="#" class="c-footer__link">What's New</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-labelledby="footer-company">
+                    <h5 id="footer-company" class="c-footer__col-title">Company</h5>
+                    <ul class="c-footer__links">
+                        <li><a href="#" class="c-footer__link">About</a></li>
+                        <li><a href="#" class="c-footer__link">Blog</a></li>
+                        <li><a href="#" class="c-footer__link">Careers</a></li>
+                        <li><a href="#" class="c-footer__link">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="c-footer__bottom">
+                <p class="c-footer__copyright">© 2025 Canva Pty Ltd. All rights reserved.</p>
+                <nav class="c-footer__legal" aria-label="Legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </nav>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 Luminary Studio. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
-        </div>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('open');
-        }
-    </script>
+    </footer>       
 </body>
 
 </html>
