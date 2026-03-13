@@ -1,150 +1,101 @@
 <div align="center">
 
-<!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=B85C38&height=120&section=header&text=Lumi%C3%A8re+Studio&fontSize=42&fontColor=F5F0E8&fontAlignY=70&desc=Full+Stack+Developer+%7C+Creative+Web+Experiences&descAlignY=90&descFontColor=F5F0E8&descFontSize=14" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=B85C38&height=130&section=header&text=Mohamed+Elfarsisi&fontSize=40&fontColor=F5F0E8&fontAlignY=65&desc=Full+Stack+Developer+%7C+AI+Specialist+%7C+Cairo%2C+Egypt&descAlignY=85&descFontColor=E2DDD4&descFontSize=14" />
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohamed_Elfarsisi-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed-elfarsisi/)
+[![GitHub](https://img.shields.io/badge/GitHub-mohamed--elfrsisi-1A1612?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohamed-elfrsisi)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--9603--3862-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0009-9603-3862)
+[![Location](https://img.shields.io/badge/📍_Cairo-Egypt-B85C38?style=for-the-badge)](https://github.com/mohamed-elfrsisi)
 
 </div>
 
 ---
 
-## 👋 About This Project
+## 👨‍💻 About Me
 
-> **Lumière Studio** is a fully hand-coded, multi-page static website built for a fictional Parisian creative agency. It demonstrates professional frontend development with zero frameworks — pure HTML, CSS, and vanilla JavaScript.
+> *"Architecting scalable, industrial-grade software solutions — where engineering excellence meets creative vision."*
 
-This project was built as **Task 1: Build a Simple Static Website** and covers:
+I'm a **Full Stack Developer & AI Specialist** based in Cairo, Egypt. I'm passionate about building clean, performant web experiences and intelligent systems that solve real-world problems.
 
-- ✅ Multi-page structure (Home, About, Contact)
-- ✅ Semantic HTML5 with accessibility in mind
-- ✅ Custom CSS design system with variables
-- ✅ Fully responsive layout using CSS media queries
-- ✅ Professional two-tier sticky header with scroll-shrink behaviour
-- ✅ Animated components (marquee, fade-in, hover states)
-- ✅ Working contact form with success state
+- 🔭 Currently working on **[Luminary Studio Website](https://github.com/mohamed-elfrsisi/luminary-studio-website)** — a multi-page static site with zero dependencies
+- 🧠 Deepening expertise in **Full Stack Development** and **AI/ML engineering**
+- 🎯 Focused on writing scalable, maintainable, production-ready code
+- 📚 Always learning — currently exploring advanced CSS architecture and AI integration
+- 📍 Based in **Cairo, Egypt**
 
 ---
 
 ## 🚀 What I'm Currently Working On
 
 ```text
-🔨  Lumière Studio — Static Website       ████████████████████░   90%
-📐  Responsive polish & cross-browser     ████████████░░░░░░░░░   60%
-✨  Animations & micro-interactions       ██████████░░░░░░░░░░░   50%
+🌐  Luminary Studio Website     ████████████████████░   90%  HTML · CSS · JS
+🤖  AI-Powered Applications     ██████████████░░░░░░░   70%  Python · ML
+📐  Responsive UI Systems       ████████████░░░░░░░░░   60%  CSS Architecture
+✨  Animations & Interactions   ██████████░░░░░░░░░░░   50%  CSS · Vanilla JS
 ```
-
-- 🌐 Building out a fully responsive, multi-page website from scratch
-- 🎨 Designing a cohesive editorial aesthetic with CSS custom properties
-- 📱 Implementing mobile-first responsive layouts with media queries
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Skills
 
 <div align="center">
 
+### Frontend
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive Design](https://img.shields.io/badge/Responsive_Design-B85C38?style=for-the-badge&logo=css3&logoColor=white)
+
+### Backend & AI
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AI/ML](https://img.shields.io/badge/AI_Specialist-1A1612?style=for-the-badge&logo=openai&logoColor=white)
+
+### Tools & Platforms
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-1A1612?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 </div>
 
-| Layer | Technology |
-|---|---|
-| **Structure** | HTML5 — semantic, accessible markup |
-| **Styling** | CSS3 — custom properties, grid, flexbox, animations |
-| **Typography** | Cormorant Garamond + DM Mono via Google Fonts |
-| **Responsive** | CSS Media Queries — mobile, tablet, desktop breakpoints |
-
 ---
 
-## 📁 Project Structure
+## 📌 Featured Project
+
+<div align="center">
+
+### 🏛️ [Luminary Studio Website](https://github.com/mohamed-elfrsisi/luminary-studio-website)
+
+</div>
+
+> A clean, responsive multi-page static website built with **pure HTML & CSS** — no frameworks, no dependencies.
 
 ```
-lumiere-studio/
+luminary-studio-website/
 │
-├── index.html          # Homepage — hero, services, portfolio, testimonial
-├── about.html          # About page — story, values, team, stats
-├── contact.html        # Contact page — form, info panel, FAQ
-│
-└── README.md           # You are here
+├── index.html        # Homepage — hero, marquee, services, portfolio, testimonial
+├── about.html        # About — stats strip, story, values grid, team cards
+├── contact.html      # Contact — form, info sidebar, availability, FAQ
+├── css/              # Stylesheets
+└── README.md
 ```
 
----
-
-## 🌟 Key Features
-
-### 🏠 Homepage (`index.html`)
-- Full-viewport hero with split two-column layout
-- Dark right panel with floating stats badges
-- Animated scrolling marquee ticker
-- 3-column services grid
-- Portfolio work showcase grid (5 items)
-- Testimonial section with pull quote
-
-### 👥 About Page (`about.html`)
-- Stats strip — 4 key metrics
-- Sticky two-column story layout
-- Values grid with roman numeral icons
-- Team member cards with role badges
-
-### 📬 Contact Page (`contact.html`)
-- Availability status indicator (animated pulse)
-- Split layout — info sidebar + form panel
-- Full enquiry form with checkboxes, select, textarea
-- Form submission success state
-- FAQ grid (6 questions)
-
-### 🗂️ Shared Components
-| Component | Description |
+| Feature | Detail |
 |---|---|
-| **Header** | Two-tier: utility topbar + main nav with scroll-shrink |
-| **Navigation** | Active states, animated underline, mobile hamburger (animated X) |
-| **Footer** | 4-column grid with brand, navigation, services, social links |
+| 🗂️ Pages | Home · About · Contact |
+| 🎨 Design System | CSS custom properties — cream, ink, rust palette |
+| 📐 Layout | CSS Grid + Flexbox, fully responsive |
+| 📱 Mobile | Hamburger menu with animated X, mobile-first breakpoints |
+| ✨ Animations | Fade-up entrance, scrolling marquee, hover underline slide |
+| 🔝 Header | Two-tier sticky nav with scroll-shrink behaviour |
+| 📬 Form | Full contact form with validation + success state |
+| ⚡ Zero deps | No frameworks, no build tools — open and run |
 
----
-
-## 📸 Pages Preview
-
-| Page | Description |
-|---|---|
-| `index.html` | Hero · Marquee · Services · Portfolio · Testimonial |
-| `about.html` | Stats · Story · Values · Team |
-| `contact.html` | Availability · Form · Info · FAQ |
-
----
-
-## 💻 Getting Started
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/lumiere-studio.git
-
-# 2. Open in your browser — no build step needed!
-cd lumiere-studio
-open index.html
-
-# Or with a local server (recommended):
-npx serve .
-# Then visit http://localhost:3000
-```
-
-> ⚡ No dependencies. No build tools. No frameworks. Just open `index.html` in any browser.
-
----
-
-## 🎨 Design System
-
-```css
-/* Colour Palette */
---cream:      #F5F0E8   /* Background */
---ink:        #1A1612   /* Primary text & dark panels */
---rust:       #B85C38   /* Accent — CTAs, highlights, active states */
---warm-grey:  #9C9087   /* Secondary text */
---light-line: #E2DDD4   /* Borders & dividers */
-
-/* Typography */
-Display:  Cormorant Garamond — serif, weights 300/400/600
-Body/UI:  DM Mono — monospace, weights 300/400
-```
+[![View Repo](https://img.shields.io/badge/View_Repository-1A1612?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohamed-elfrsisi/luminary-studio-website)
+![HTML](https://img.shields.io/badge/HTML-43.3%25-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-56.7%25-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 ---
 
@@ -152,39 +103,43 @@ Body/UI:  DM Mono — monospace, weights 300/400
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=transparent&title_color=B85C38&text_color=1A1612&icon_color=B85C38&border_color=E2DDD4&bg_color=F5F0E8)
+<img src="https://github-readme-stats.vercel.app/api?username=mohamed-elfrsisi&show_icons=true&theme=transparent&title_color=B85C38&text_color=1A1612&icon_color=B85C38&border_color=E2DDD4&bg_color=F5F0E8&include_all_commits=true&count_private=true" height="165"/>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=transparent&title_color=B85C38&text_color=1A1612&border_color=E2DDD4&bg_color=F5F0E8)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamed-elfrsisi&layout=compact&theme=transparent&title_color=B85C38&text_color=1A1612&border_color=E2DDD4&bg_color=F5F0E8" height="165"/>
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=transparent&ring=B85C38&fire=B85C38&currStreakLabel=B85C38&sideLabels=9C9087&dates=9C9087&border=E2DDD4&background=F5F0E8)
+</div>
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mohamed-elfrsisi&theme=transparent&ring=B85C38&fire=B85C38&currStreakLabel=B85C38&sideLabels=9C9087&dates=9C9087&border=E2DDD4&background=F5F0E8)
+
+</div>
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=mohamed-elfrsisi&color=B85C38&style=for-the-badge&label=PROFILE+VIEWS)
+![Repos](https://img.shields.io/badge/Public_Repos-21-1A1612?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
 ---
 
-## 📬 Contact & Socials
+## 🤝 Let's Connect
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-lumiere.studio-B85C38?style=for-the-badge&logo=firefox&logoColor=white)](https://YOUR_PORTFOLIO_URL)
-[![Email](https://img.shields.io/badge/Email-hello%40lumiere.studio-1A1612?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@lumiere.studio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_USERNAME)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-1A1612?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_Me-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed-elfarsisi/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow_Me-1A1612?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohamed-elfrsisi)
+[![ORCID](https://img.shields.io/badge/ORCID-Research_Profile-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0009-9603-3862)
 
 </div>
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=B85C38&height=80&section=footer&fontColor=F5F0E8" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=B85C38&height=90&section=footer&fontColor=F5F0E8" />
 
-*Crafted with intention — no frameworks harmed in the making of this website.*
+*Crafted with intention · Full Stack Developer & AI Specialist · Cairo, Egypt 🇪🇬*
 
 </div>
